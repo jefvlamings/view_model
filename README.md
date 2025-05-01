@@ -1,13 +1,13 @@
-# view_model
+# viewmodel
 
 A ViewModel layer for Ruby On Rails
 
 ## Installation
 
-Add view_model to your Rails application
+Add viewmodel to your Rails application
 
 ```sh
-bundle add 'view_model'
+bundle add 'viewmodel'
 ```
 
 ## Usage
@@ -39,7 +39,7 @@ The view would then look like this;
 ```erb
 <div id="product">
   <h1><%= @product.name %></h1>
-  <h2>@internal_reference</h2>
+  <h2><%= @internal_reference %></h2>
 </div>
 ```
 
