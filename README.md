@@ -7,7 +7,7 @@ A ViewModel layer for Ruby On Rails
 Add viewmodel to your Rails application
 
 ```sh
-bundle add 'viewmodel'
+bundle add viewmodel
 ```
 
 ## Usage
