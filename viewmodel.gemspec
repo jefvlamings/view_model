@@ -1,4 +1,4 @@
-require_relative "lib/view_model"
+require_relative "lib/view_model/version"
 
 Gem::Specification.new do |spec|
   spec.name = "viewmodel"

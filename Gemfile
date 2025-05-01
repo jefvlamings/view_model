@@ -8,4 +8,5 @@ group :test do
   gem "minitest"
   gem "rake"
   gem "sqlite3"
+  gem "debug"
 end

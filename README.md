@@ -28,23 +28,18 @@ The contents of the view model look something like this:
 
 ```rb
 class ProductsShowViewModel < ViewModel
-  def breadcrumbs
-    [
-      [@product.category.name, category_path(@product.category)],
-      [@product.name, product_path(@product)]
-    ]
+  def internal_reference
+    [@product.id, @product.name].join("-")
   end
 end
 ```
 
-The view itself ooks like this;
+The view would then look like this;
 
 ```erb
 <div id="product">
   <h1><%= @product.name %></h1>
-  <%= breadcrumbs.each do |name, url| %>
-    <li><a href="<%= url %>"><%= name %></a></li>
-  <% end %>
+  <h2>@internal_reference</h2>
 </div>
 ```
 
