@@ -18,7 +18,7 @@ Create a ViewModel object in a corresponding ```view_models``` folder
 app/
 ├─ view_models/
 │   └─ products/
-│       └─ show.rb
+│       └─ show_view_model.rb
 ├─ views/
 │   └─ products/
 │       └─ show.html.erb
@@ -27,7 +27,7 @@ app/
 The contents of the view model look something like this:
 
 ```rb
-class ProductsShowViewModel < ViewModel
+class Products::ShowViewModel < ViewModel
   def internal_reference
     [@product.id, @product.name].join("-")
   end
