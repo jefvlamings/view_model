@@ -25,8 +25,9 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "standard", "~> 1"
-  spec.add_development_dependency "minitest", "~> 5"
+  spec.add_development_dependency "standard"
+  spec.add_development_dependency "minitest"
+  spec.add_development_dependency "rails"
 
   # For more information and examples about making a new gem, checkout our
   # guide at: https://bundler.io/guides/creating_gem.html
